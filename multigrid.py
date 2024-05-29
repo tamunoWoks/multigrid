@@ -1,44 +1,47 @@
 def main():
     printSquare(getSquare())
 
+
 def getSquare():
     try:
-        dimension = int(input('Enter dimension of square: '))
+        dimension = int(input("Enter dimension of square: "))
         return dimension
     except ValueError:
-        print('Enter a valid integer')
+        print("Enter a valid integer")
 
 
-#LOGIC 1
+# LOGIC 1
 # def printSquare(dim):
 #     try:
 #         for i in range(dim):
 #             for j in range(dim):
-#                 print('#', end='')
+#                 print("#", end="")
 #             print()
 #     except TypeError:
-#         print('Range() needs a valid integer')
+#         print("Range() needs a valid integer")
 
-#LOGIC 2
+
+# LOGIC 2
 # def printSquare(dim):
 #     try:
 #         for i in range(dim):
-#             print('#'* dim)
+#             print("#" * dim)
 #     except TypeError:
-#         print('Range() needs a valid integer')
+#         print("Range() needs a valid integer")
 
 
-#LOGIC 3
+# LOGIC 3
 def printSquare(dim):
     try:
         for i in range(dim):
             printRow(dim)
     except TypeError:
-        print('Range() needs a valid integer')
+        print("Range() needs a valid integer")
+
+
 def printRow(dim):
-    print('#' * dim)
+    print("#" * dim)
 
 
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
