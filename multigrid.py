@@ -20,12 +20,25 @@ def getSquare():
 #         print('Range() needs a valid integer')
 
 #LOGIC 2
+# def printSquare(dim):
+#     try:
+#         for i in range(dim):
+#             print('#'* dim)
+#     except TypeError:
+#         print('Range() needs a valid integer')
+
+
+#LOGIC 3
 def printSquare(dim):
     try:
         for i in range(dim):
-            print('#'* dim)
+            printRow(dim)
     except TypeError:
         print('Range() needs a valid integer')
+def printRow(dim):
+    print('#' * dim)
+
+
 
 if __name__ == '__main__':
     main()
