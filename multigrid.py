@@ -10,15 +10,22 @@ def getSquare():
 
 
 #LOGIC 1
+# def printSquare(dim):
+#     try:
+#         for i in range(dim):
+#             for j in range(dim):
+#                 print('#', end='')
+#             print()
+#     except TypeError:
+#         print('Range() needs a valid integer')
+
+#LOGIC 2
 def printSquare(dim):
     try:
         for i in range(dim):
-            for j in range(dim):
-                print('#', end='')
-            print()
+            print('#'* dim)
     except TypeError:
         print('Range() needs a valid integer')
-
 
 if __name__ == '__main__':
     main()
